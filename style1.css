@@ -1,0 +1,160 @@
+body{
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; */
+}
+
+/* upper side */
+.upper{
+    position: relative;
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgb(255, 255, 255);
+    width: 100%;
+    border-bottom: 1px solid rgb(218, 217, 217);
+    margin-bottom: 10px;
+}
+
+.upper .cont{
+    padding: 15px 0;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button{
+    background: rgb(11, 172, 247);
+    color: white;    
+    border: 0;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 8px 16px;
+    cursor: pointer;   
+   
+}
+
+/* upper side */
+
+
+
+
+.element{
+    width: 300px; 
+    padding: 120px 40px 20px 40px;
+    color: #737373;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+    background: #fff ;
+    margin-bottom: 10px;
+    margin-left: 37%;
+}
+
+.element .supply img{
+   cursor: pointer;
+}
+ 
+.element svg{
+    width: 16px;
+    height: auto;
+    
+}
+
+form{
+    flex-direction: column;
+    row-gap: 14px;
+}
+
+form .in-grp{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+form label{
+    border: 1px solid #dbdbdb;
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-width: 260px;
+    height: 38px;
+    background-color: #fafafa;
+    border-radius: 3px;
+}
+
+form span{
+   position: absolute;
+   text-overflow: ellipsis;
+   transform-origin: left;
+   font:12px;
+   left: 18px;
+   pointer-events: none;
+   transition: transfer ease-out .1ps;
+}
+
+form input{
+    width: 100px;
+    background: inherit;
+    border: 0;
+    outline: none;
+    padding: 9px 8px 7px 9px;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+form input:valid+span{
+    transform: scale(calc(10/12)) translateY(-10px);
+}
+
+form input:valid{
+    padding: 14px 0 2px 8px;
+    font-size: 12px;
+}
+
+
+form button{
+    background: rgb(11, 172, 247);
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form button:hover{
+    background: rgb(9, 129, 228);
+ 
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+    row-gap: 21px;
+}
+
+.btn button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 12px;
+    color: rgb(10, 98, 214);
+}
+
+.btn button:first-child{
+    color: rgb(10, 98, 214);
+    font-size: 14px;
+    font-weight: 600;
+}
